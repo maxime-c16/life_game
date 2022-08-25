@@ -2,7 +2,7 @@
 
 # define LIFEGAME_H
 
-//# define WINDOW_SIZE 10
+# define WINDOW_SIZE 10
 # define ALIVE_SYMBOL '1'
 # define DEATH_SYMBOL '-'
 
@@ -37,13 +37,13 @@ lives	pos_x(lives pos, int x, int y, lives **tab);
 lives	pos_y(lives pos, int x, int y, lives **tab);
 lives	**get_changes(lives **tab);
 int		check_survive(lives	cell);
-lives	**parse_life(const char *str, lives **tab);
+lives	**parse_life(char *str, lives **tab);
 lives	**ft_fill_tab(lives **tab);
 lives	**get_struc(lives **tab);
 void	*ft_calloc(size_t count, size_t size);
 void	ft_bzero(lives *b, size_t n);
 void	ft_print_tab(lives **tab);
-int		ft_get_size_parse(const char *str);
+int		ft_get_size_parse(char *str);
 int		ft_isdigit(int c);
 
 #endif
